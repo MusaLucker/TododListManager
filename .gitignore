@@ -60,3 +60,7 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+/TodoUIKit.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+/TodoUIKit.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+/TodoUIKit.xcodeproj/xcshareddata/xcbaselines/8A8545F82DB643C700858FEE.xcbaseline/81B03265-9E82-48D1-AE3E-2F914BEC31B9.plist
+/TodoUIKit.xcodeproj/xcshareddata/xcbaselines/8A8545F82DB643C700858FEE.xcbaseline/Info.plist
