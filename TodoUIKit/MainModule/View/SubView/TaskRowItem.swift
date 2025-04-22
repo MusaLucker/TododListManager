@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TaskRowView: View,Identifiable {
+    //MARK: - Property
     let id:UUID = UUID()
     let todoId:String
     let title:String
@@ -26,6 +27,7 @@ struct TaskRowView: View,Identifiable {
         self.delegate = delegate
         self.item = item
     }
+    //MARK: - Body
     var body: some View {
         VStack(alignment:.leading) {
             HStack(alignment:.top) {
@@ -57,6 +59,7 @@ struct TaskRowView: View,Identifiable {
             }
             .frame(maxWidth: .infinity)
             .background(.black)
+            //MARK: - Context Menu
             .contextMenu {
                 Button {
                     delegate.showEdit(id:todoId,title:title,description:description,time:time)
@@ -66,7 +69,7 @@ struct TaskRowView: View,Identifiable {
                 
                 
                 Button {
-                   ///
+                   /// there's no action for this button
                 } label: {
                     Label("Поделиться", systemImage: "square.and.arrow.up")
 

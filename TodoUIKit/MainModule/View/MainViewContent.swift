@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainViewContent: View {
+    //MARK: - Property
     @State private var title = ""
     @State private var description = ""
     @State private var items:[TodoItem] = []
@@ -21,6 +22,7 @@ struct MainViewContent: View {
         UINavigationBar.appearance().barStyle = .black
         self.delegate = delegate
     }
+    //MARK: - Body
     var body: some View {
         NavigationStack {
             VStack(alignment:.leading) {

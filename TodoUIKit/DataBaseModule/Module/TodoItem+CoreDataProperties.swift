@@ -8,6 +8,8 @@
 
 import Foundation
 import CoreData
+
+//MARK: - TodoItem
 @objc(TodoItem)
 public class TodoItem: NSManagedObject {
 

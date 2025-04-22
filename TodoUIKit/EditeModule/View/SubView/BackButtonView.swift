@@ -7,7 +7,9 @@
 
 import SwiftUI
 struct BackButtonView: View {
+    //MARK: - Property
     var completion:()->Void
+    //MARK: - Body
     var body: some View {
         Button {
            completion()

@@ -8,6 +8,7 @@
 import UIKit
 
 class MainModuleBuilder {
+    //MARK: - var/let
     static func build() -> UIViewController {
         let interactor = MainInteractor()
         let router = MainRouter()

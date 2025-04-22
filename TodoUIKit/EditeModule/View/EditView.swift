@@ -17,6 +17,7 @@ protocol EditViewProtocol:AnyObject {
 }
 
 class EditView: UIViewController{
+    //MARK: - var/let
     var presenter:EditPresenterProtocol?
     var editTitle: String = ""
     var editDescript: String = ""

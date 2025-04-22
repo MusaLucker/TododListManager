@@ -6,6 +6,7 @@
 //
 
 import Foundation
+//MARK: - IntConverter
 extension Int {
     func convertIntoString() -> String {
         let stringNumber = String(self)

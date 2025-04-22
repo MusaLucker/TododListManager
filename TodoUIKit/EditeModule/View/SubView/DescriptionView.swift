@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct DescriptionView: View {
+    //MARK: - Property
     @Binding var text:String
+    //MARK: - Body
     var body: some View {
         TextEditor(text:$text)
             .font(.title3)

@@ -15,9 +15,11 @@ protocol MainPresenterProtocol:AnyObject {
 
 
 class MainPresenter {
+    //MARK: - var/let
     weak var view:MainView?
     var interactor:MainInteractorProtocol
     var router:MainRouterProtocol
+    
     init(interactor: MainInteractorProtocol, router: MainRouterProtocol) {
         self.interactor = interactor
         self.router = router
@@ -26,7 +28,7 @@ class MainPresenter {
 
 //MARK: - MainPresenterProtocol
 extension MainPresenter:MainPresenterProtocol {
-    
+
     func didLoadTodo(items: [TodoItem]) {
         view?.loadTodo(items: items)
     }

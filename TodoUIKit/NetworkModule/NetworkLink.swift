@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: - Network Links
 enum NetworkLink {
     case user
     var url:String {

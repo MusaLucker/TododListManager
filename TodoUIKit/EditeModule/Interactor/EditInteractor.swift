@@ -11,6 +11,7 @@ protocol EditInteractorProtocol:AnyObject {
 }
 
 class EditInteractor {
+    //MARK: - var/let
     weak var presenter:EditPresenterProtocol?
     var id:String
     var title:String

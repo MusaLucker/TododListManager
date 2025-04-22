@@ -13,13 +13,13 @@ protocol MainInteractorProtocol:AnyObject {
 }
 
 class MainInteractor {
+    //MARK: - var/let
     weak var presenter:MainPresenterProtocol?
     private let networkManager = NetworkManager()
     private let databaseManager = DataBaseManager.shared
     private var todoItems:[TodoItem] = []
 }
-//download
-//create datas
+
 
 //MARK: - MainInteractorProtocol
 extension MainInteractor:MainInteractorProtocol {

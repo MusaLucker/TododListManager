@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct EditViewContent: View {
+    //MARK: - Properties
     @State private var title:String = ""
     @State private var desciption:String = ""
     @State private var date:String = ""
@@ -20,6 +21,7 @@ struct EditViewContent: View {
         self.delegate = delegate
     }
     var delegate:EditViewDelegate
+    //MARK: - Body
     var body: some View {
         VStack(alignment:.leading) {
             HStack() {
@@ -43,6 +45,3 @@ struct EditViewContent: View {
     }
 }
 
-//#Preview {
-//    EditViewContent(title: "", desciption: "",delegate: AddViewDelegate.Protocol)
-//}

@@ -15,6 +15,7 @@ protocol EditPresenterProtocol:AnyObject {
 
 
 class EditPresenter {
+    //MARK: - var/let
     weak var view:EditView?
     var interactor:EditInteractorProtocol
     var router:EditRouterProtocol

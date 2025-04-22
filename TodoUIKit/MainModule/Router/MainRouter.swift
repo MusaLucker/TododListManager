@@ -12,6 +12,7 @@ protocol MainRouterProtocol:AnyObject {
 }
 
 class MainRouter {
+    //MARK: - var/let
     weak var view:MainView?
 }
 

@@ -7,6 +7,7 @@
 
 import XCTest
 @testable import TodoUIKit
+//MARK: - MockHTTPClient
 class MockHTTPCLient {
     var inputUrL:String?
     var executeCalled = false
@@ -39,7 +40,7 @@ struct FakeHTTPService  {
     }
 }
 
-
+//MARK: - NetworkService
 final class NetworkService: XCTestCase {
     func testExpectationSearch() {
         //GIVEN

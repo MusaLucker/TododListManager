@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct TitleTextFieldView: View {
+    //MARK: - Properties
     @Binding var text:String
     var placeholder:String = ""
     @State private var inputText:String = ""
+    //MARK: - Body
     var body: some View {
         TextField(text: $text, axis: .horizontal) {
             Text(placeholder)
